@@ -1,0 +1,173 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+blockquote {
+  margin: 0;
+}
+
+.App {
+  background-color: var(--current-color);
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteBox {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.quoteBox .quote {
+  color: var(--current-color);
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-align: left;
+  margin: 0 auto;
+  width: 81%;
+}
+
+.quoteBox .author {
+  color: var(--current-color);
+  font-weight: 500;
+  text-align: right;
+  margin: 20px 0 10px 0;
+  font-size: 14px;
+}
+
+.quoteBox .fa-quote-left,
+.quoteBox .fa-quote-right {
+  position: relative;
+  color: var(--current-color);
+  font-size: 18px;
+}
+
+.quoteBox .fa-quote-left {
+  top: 15px;
+}
+
+.quoteBox .fa-quote-right {
+  bottom: 15px;
+  float: right;
+}
+
+.quoteBox .btns {
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.quoteBox .btn {
+  background-color: var(--current-color);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 16px;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.quoteBox .tweet {
+  background: transparent;
+  color: var(--current-color);
+  font-size: 24px;
+}
+
+@media (min-width: 576px) {
+  .quoteBox .quote {
+    font-size: 24px;
+  }
+
+  .quoteBox .author {
+    font-size: 18px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 26px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 20px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quoteBox {
+    padding: 35px;
+  }
+
+  .quoteBox .quote {
+    font-size: 26px;
+  }
+
+  .quoteBox .author {
+    font-size: 20px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 28px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 25px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quoteBox .quote {
+    font-size: 28px;
+    width: 85%;
+  }
+
+  .quoteBox .author {
+    font-size: 24px;
+  }
+
+  .quoteBox .fa-quote-left,
+  .quoteBox .fa-quote-right {
+    font-size: 30px;
+  }
+
+  .quoteBox .fa-quote-left {
+    top: 28px;
+  }
+
+  .quoteBox .fa-quote-right {
+    bottom: 28px;
+  }
+}
